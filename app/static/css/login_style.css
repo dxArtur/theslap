@@ -1,9 +1,17 @@
 /*definindo a imagem de fundo */
 body{
-    background-image: url("../media/fundo01.jpg");
+    background-image: url("../media/fundo02.jpg");
     background-repeat: no-repeat fixed;
     background-size: cover;
 
+}
+
+.logo{
+    background-image: url("../media/logotheslap.png");
+    width: 445px;
+    height: 140px;
+    margin-left: 400px;
+    background-size: cover;
 }
 
 .card{

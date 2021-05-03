@@ -7,12 +7,12 @@ body{
 }
 
 .logo{
-    background-image: url("../media/logo.png");
-    width: 329px;
-    height: 100px;
-    margin-left: 550px;
-    background-repeat: no-repeat;
-    border-radius: 20px 20px 20px 20px;
+    background-image: url("../media/logotheslap.png");
+    width: 445px;
+    height: 140px;
+    margin-left: 400px;
+    background-size: cover;
+
 }
 
 
@@ -184,7 +184,8 @@ button:hover ul{
     border-radius: 12px;
     font-size: 23px;
     font-weight: bold;
-    font-family: Arial
+    font-family: Arial;
+    margin-top: 88px;
 }
 
 
