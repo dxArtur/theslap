@@ -1,0 +1,29 @@
+{% load static %}
+
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TheSlap</title>
+    <link rel="stylesheet" href="{% static 'css/register_style.css' %}" >
+</head>
+<body>
+    <form class="form" action="">
+        <div class="card_logo"/>
+        <div class="card">
+            <div class="card_itens">
+                <label id="labeluser">digite seu user:</label>
+                <input id="inputuser" name="User" placeholder="digite seu user">
+                <label id="labelpwd">digite seu password:</label>
+                <input id="inputpwd" type="text" name="Psswd" placeholder="digite sua senha">
+                <button id="bttnlogin" class="register_button" type="button">register</button>
+            </div>
+                <div class="card_profile"/>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

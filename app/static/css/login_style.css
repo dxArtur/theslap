@@ -1,0 +1,121 @@
+/*definindo a imagem de fundo */
+body{
+    background-image: url("../media/fundo01.jpg");
+    background-repeat: no-repeat fixed;
+    background-size: cover;
+
+}
+
+.card{
+    background-color: #7ED1EF;
+    border: 8px solid #E90078;
+    height: 220px; /*altura */
+    width: 700px; /*Largura */
+    margin: 0 auto;
+    border-radius: 20px;
+    left:50%;
+    top:50%;
+    margin-left:-350px; /* Metade do valor da Largura */
+    margin-top:-185px; /* Metade da valor da Altura */
+    position:absolute;
+    text-align: center;
+
+}
+
+.card_itens >label{
+    font-size: 23px;
+    font-weight: bold;
+    color: #1702A0;
+    font-family:Arial;
+
+}
+
+.card_itens >input{
+    border: 0px;
+    background: #AFD7E9;
+    border-radius: 8px;
+    aling-items: center;
+
+
+}
+
+#inputuser{
+    width: 86%;
+    height: 33px;
+    margin-top:35px;
+}
+#inputpwd{
+    width: 86%;
+    height: 33px;
+    margin-top: 45px;
+}
+
+
+.card_profile{
+    background-image: url("../media/blankuser.png");
+
+    background-color: #7ED1EF;
+    border: 8px   solid  #E90078;
+    height: 150px; /*altura */
+    width: 150px; /*Largura */
+    margin: 0 auto;
+    border-radius: 20px 0px 0px 20px;
+    left:10%;
+    top:50%;
+    margin-left:-236px; /* Metade do valor da Largura */
+    margin-top:-70px; /* Metade da valor da Altura */
+    position:absolute;
+    text-align: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.card_register{
+    background-size: cover;
+    border-radius: 0px 0px 20px 20px;
+}
+
+
+#bttnregister {
+    text-align: right;
+    border: 8px   solid  #E90078;
+    height: 75px; /*altura */
+    width: 716px; /*Largura */
+    border-radius: 0px 0px 20px 20px;
+    left:10%;
+    top:50%;
+    margin-left: -8px; /* Metade do valor da Largura */
+    margin-top: 30px; /* Metade da valor da Altura */
+    background-color: #AFD7E9;
+    background-size: cover;
+    font-size: 19px;
+    font-weight: bold;
+    font-family:Arial;
+}
+
+
+#bttnlogin{
+    height: 83px;
+    width: 358px;
+    color: #FFFF30;
+    font-size: 23px;
+    font-weight: bold;
+    font-family:Arial;
+    border-radius: 20px 20px 20px 20px;
+    border: 8px   solid  #E90078;
+    margin-left: 348px; /* Metade do valor da Largura */
+    margin-top: 40px; /* Metade da valor da Altura */
+    background-color: #151020;
+    background-size: cover;
+
+}
+/*mudando a cor do botão de login quando o mouse passar por cima */
+#bttnlogin:hover {
+   color: #6600E4;
+   background-color: #AFD7E9;
+}
+
+#bttnregister:hover {
+   color: #6600E4;
+   background-color: #151020;
+}
