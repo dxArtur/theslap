@@ -19,6 +19,7 @@ from app.views import login
 from app.views import register
 from app.views import home
 from app.views import post
+from app.views import hometest
 
 
 urlpatterns = [
@@ -26,5 +27,6 @@ urlpatterns = [
     path('login/', login),
     path('register/', register),
     path('home/', home),
-    path('post/', post)
+    path('post/', post),
+    path('hometest/', hometest)
 ]

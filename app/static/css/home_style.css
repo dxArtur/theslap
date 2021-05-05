@@ -37,12 +37,43 @@ label{
     height: 150px;
 }
 
-.post_feed_01>img{
-    background-image: url("../media/profiledaniel.jpeg");
+
+
+button{
+    width: 33px;
+    height:33px;
+
+    background-color: #E90078;
+    background-size: 10px;
+    background-size: cover;
+    border-radius: 10px ;
+    margin-left: 20px;
+}
+.post_feed_01>.slapar{
+    background-image: url("../media/slapar.png");
+    margin-top: 32px;
 }
 
-.post_feed_02>img{
+.post_feed_02>.slapar{
+    background-image: url("../media/slapar.png");
+    margin-top: 32px;
+}
+.slapar:hoover{
+    background-color: #6600E4;
+}
+
+.post_feed_01>.profilepic{
+    background-image: url("../media/profiledaniel.jpeg");
+    margin-left: 550px;
+    width: 70px;
+    height: 70px;
+}
+
+.post_feed_02>.profilepic{
     background-image: url("../media/bolsonaroegrilo.jpg");
+    margin-left: 550px;
+    width: 70px;
+    height: 70px;
 }
 
 img{
@@ -103,6 +134,7 @@ img{
 }
 
 
+
 #li_feeling{
     font-size: 19px;
     font-weight: bold;
@@ -155,8 +187,7 @@ ul li{
 
 
 button:hover {
-    color: #6600E4;
-    background-color: #AFD7E9;
+    background-color: #6600E4;
 }
 
 ul{
