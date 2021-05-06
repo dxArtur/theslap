@@ -1,29 +1,24 @@
+{% extends 'base.html' %}
 {% load static %}
 
-<!doctype html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TheSlap</title>
-    <link rel="stylesheet" href="{% static 'css/register_style.css' %}" >
-</head>
-<body>
-    <form class="form" method="POST">{% csrf_token %}
-        <div class="logo"></div>
-        <div class="card">
-            <div class="card_itens">
-                <label id="labeluser">Username: </label>
-                <input id="inputuser" name="User" placeholder="Username" required />
-                <label id="labelpwd">Password:</label>
-                <input id="inputpwd" type="text" name="Psswd" placeholder="Password" required />
-                <button id="bttnlogin" class="register_button" type="submit">register</button>
-            </div>
-                <div class="card_profile"/>
-            </div>
+{% block title %} Registro {% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/register_style.css' %}" >
+{% endblock css %}
+
+{% block content %}
+<form class="form" method="POST">{% csrf_token %}
+    <div class="card">
+        <div class="card_itens">
+            <label id="labeluser">Username: </label>
+            <input id="inputuser" name="User" placeholder="Username" required />
+            <label id="labelpwd">Password:</label>
+            <input id="inputpwd" type="text" name="Psswd" placeholder="Password" required />
+            <button id="bttnlogin" class="register_button" type="submit">register</button>
         </div>
-    </form>
-</body>
-</html>
+            <div class="card_profile"/>
+        </div>
+    </div>
+</form>
+{% endblock content %}

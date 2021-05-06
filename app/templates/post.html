@@ -1,35 +1,30 @@
+{% extends 'base.html' %}
 {% load static %}
 
-<!doctype html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TheSlap</title>
-    <link rel="stylesheet" href="{% static 'css/post_style.css' %}" >
-</head>
-<body>
-    <div class="logo"></div>
-    <form class="form" action="">
-        <div class="card">
-            <div class="card_itens">
-                <label id="labeluser">artur:</label>
-                <input id="inputpost" name="User" placeholder="digite seu post">
-                    <select id="button">
-                        <option value="0">feeling:</option>
-                        <option value="1">enbucetado</option>
-                        <option value="2">frustated</option>
-                    </select>
-                    </button>
-            </div>
-            <div class="card_profile"/>
-            </div>
-            <div>
-                <a href="{% url 'app:home' %}" id="bttnpost">Postar</a>
-            </div>
+{% block title %} Criar Post {% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/post_style.css' %}" >
+{% endblock css %}
+
+{% block content %}
+<form class="form" action="">
+    <div class="card">
+        <div class="card_itens">
+            <label id="labeluser">artur:</label>
+            <input id="inputpost" name="User" placeholder="digite seu post">
+                <select id="button">
+                    <option value="0">feeling:</option>
+                    <option value="1">enbucetado</option>
+                    <option value="2">frustated</option>
+                </select>
+                </button>
         </div>
-    </form>
-</body>
-</html>
+        <div class="card_profile"/>
+        </div>
+        <div>
+            <a href="{% url 'app:home' %}" id="bttnpost">Postar</a>
+        </div>
+    </div>
+</form>
+{% endblock content %}

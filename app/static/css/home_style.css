@@ -1,20 +1,3 @@
-/*definindo a imagem de fundo */
-body{
-    background-image: url("../media/fundo02.jpg");
-    background-repeat: no-repeat fixed;
-    background-size: cover;
-
-}
-
-.logo{
-    background-image: url("../media/logotheslap.png");
-    width: 445px;
-    height: 140px;
-    margin-left: 500px;
-    background-size: cover;
-
-}
-
 h1{
     color: #6600E4;
     margin-left: 10px;

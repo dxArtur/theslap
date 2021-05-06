@@ -1,53 +1,47 @@
+{% extends 'base.html' %}
 {% load static %}
+{% block title %} Login {% endblock title %}
 
-<!doctype html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TheSlap</title>
-    <link rel="stylesheet" href="{% static 'css/login_style.css' %}" >
-</head>
-<body>
-    <div class="logo"></div>
-    <form method="POST">{% csrf_token %}
-        <div class="card">
-            <div class="card_itens">
-                <div class="input-group">
-                    <label for="user">User: </label>
-                    <input id="user"
-                           name="username"
-                           placeholder="Nome de usuário"
-                           required
-                    >
-                </div>
-                <div class="input-group">
-                    <label for="password">Pwrd: </label>
-                    <input id="password"
-                           type="password"
-                           name="password"
-                           placeholder="Password"
-                           required
-                    >
-                </div>
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/login_style.css' %}" />
+{% endblock css %}
 
-                <a href="{% url 'app:register' %}"
-                   id="btn_register"
-                   class="register_button"
+{% block content %}
+<form method="POST">{% csrf_token %}
+    <div class="card">
+        <div class="card_itens">
+            <div class="input-group">
+                <label for="user">User: </label>
+                <input id="user"
+                       name="username"
+                       placeholder="Nome de usuário"
+                       required
                 >
-                    Come Together
-                </a>
-                <button id="btn_login"
-                        class="login_button"
-                        type="submit"
-                >
-                    Login
-                </button>
             </div>
-            <div class="card_profile"/></div>
+            <div class="input-group">
+                <label for="password">Pwrd: </label>
+                <input id="password"
+                       type="password"
+                       name="password"
+                       placeholder="Password"
+                       required
+                >
+            </div>
+
+            <a href="{% url 'app:register' %}"
+               id="btn_register"
+               class="register_button"
+            >
+                Come Together
+            </a>
+            <button id="btn_login"
+                    class="login_button"
+                    type="submit"
+            >
+                Login
+            </button>
         </div>
-    </form>
-</body>
-</html>
+        <div class="card_profile"/></div>
+    </div>
+</form>
+{% endblock content %}
