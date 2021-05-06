@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Sobre {% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}" >
+{% endblock css %}
+
+{% block content %}
+<div class="content">
+  <h1>Sobre TheSlap</h1>
+
+  <p>
+    <b>TheSlap.com</b> é uma rede social fictícia que aparece
+    no programa de tv amaericado Victorious, ou <b>Brilhante Victória</b>, como
+    ficou conhecido aqui no Brasil. Neste sistema os alunos do colégio Hollywood
+    Arts compartilham seus sentimos e suas vidas, assim como as demais redes
+    sociais da vida real.
+  </p>
+  <p>
+    Fizemos esse site como uma homenagem ao programa que tanto nos fez rir e que
+    divertiu nossas vidas de adolescentes problemáticos que não pensavam em nada
+    mais que One Direction, Green Day e como chamar atenção dos pais e das
+    garotas do IntEd.
+  </p>
+</div>
+{% endblock %}

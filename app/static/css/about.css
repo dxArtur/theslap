@@ -1,0 +1,23 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    margin: 100px auto;
+
+    border: 8px solid #E90078;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #AFD7E9;
+}
+
+h1 {
+    font-size: 50px;
+    color: #1702A0;
+}
+
+p {
+    line-height: 30px;
+    font-size: 18px;
+}

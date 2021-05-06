@@ -58,3 +58,7 @@ def post_view(request, post_id):
     post = posts[post_id]
 
     return render(request, template_name="see_post.html", context={"post": post})
+
+
+def about_view(request):
+    return render(request, template_name="about.html")
