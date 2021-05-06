@@ -64,5 +64,17 @@ def about_view(request):
     return render(request, template_name="about.html")
 
 
+def dev_view(request):
+    return render(request, template_name="dev.html")
+
+
 def contact_view(request):
     return render(request, template_name="contact.html")
+
+
+def contact_result_view(request):
+    return render(
+        request,
+        template_name="contact_result.html",
+        context={"form": request.POST}
+    )

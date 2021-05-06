@@ -17,27 +17,67 @@
     color: #1702A0;
 }
 
-.content > div > h4 {
+.content > h4 {
     font-size: 30px;
     color: #E90078;
-    margin: 0 0 10px 0;
+    margin: 0 0 30px 0;
 }
 
-.content > div {
-    margin-bottom: 10px;
-}
-
-.content > div > a {
+.content > a {
     text-decoration: none;
     color: #6600E4;
     font-size: 15px;
 }
 
-.content > div > a:hover {
+.content >  a:hover {
     opacity: .5;
 }
 
-.content > div > p {
+.content >  p {
     line-height: 30px;
     font-size: 18px;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 5px;
+}
+
+.content form {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.content form .input-group {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content form .input-group input {
+    width: 100%;
+}
+.content form .input-group input:nth-child(1) {
+    margin-right: 10px;
+}
+
+.content form button {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #E90078;
+    cursor: pointer;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    transition: opacity .2s;
+}
+
+.content form button:hover {
+    opacity: .8;
 }

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Contato {% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/contact.css' %}" >
+{% endblock css %}
+
+{% block content %}
+<div class="content">
+  <h4>Vai caralho!</h4>
+  <p>
+    Tamo junto demais meu aliado,
+    <b>{{ form.first_name }} {{ form.last_name }}</b>,
+    teu salve é foda demais pra turma daqui! Espera um minutinho que um dos
+    truta da equipe vai te responder, valeu? Satisfação monstra, meu querido.
+  </p>
+  <p>
+    Atenciosamente, Thiago 'pose de quebrada' Ventura
+  </p>
+</div>
+{% endblock %}

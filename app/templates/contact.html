@@ -9,25 +9,16 @@
 
 {% block content %}
 <div class="content">
-  <h1>Contato</h1>
-
-  <div>
-    <h4>Daniel</h4>
-    <a href="https://github.com/SabbathCode" target="_blank">@SabbathCode</a>
-    <p>
-      Daniboy, como gosta de ser chamado, é um programador indie, alternativo
-      e underground apaixonado por Queen e seu legado. Não confundir com a
-      Queen Elizabeth, essa aí ele não ama não.
-    </p>
-  </div>
-  <div>
-    <h4>Felipe</h4>
-    <a href="https://github.com/felipe-dna" target="_blank">@felipedna</a>
-    <p>
-      Felipe dos dna, conhecido mundialmente como defensor do Python, ama
-      Python, só fala em Python, e... programa em Python, veste Python e anda
-      Python e todo Python, Python, Python, Python...
-    </p>
-  </div>
+    <h4>Envie-nos um email!</h4>
+    <form action="{% url 'app:contact_result' %}" method="POST">{% csrf_token %}
+      <input type="email" name="email" placeholder="Email" required>
+      <div class="input-group">
+        <input type="text" name="first_name" placeholder="Nome" required>
+        <input type="text" name="last_name" placeholder="Sobrenome" required>
+      </div>
+      <textarea name="content" cols="30" rows="10" placeholder="Mensagem">
+      </textarea>
+      <button type="submit">Enviar</button>
+    </form>
 </div>
 {% endblock %}

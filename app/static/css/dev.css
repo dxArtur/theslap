@@ -1,0 +1,43 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    margin: 100px auto;
+
+    border: 8px solid #E90078;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #AFD7E9;
+}
+
+.content > h1 {
+    font-size: 50px;
+    color: #1702A0;
+}
+
+.content > div > h4 {
+    font-size: 30px;
+    color: #E90078;
+    margin: 0 0 10px 0;
+}
+
+.content > div {
+    margin-bottom: 10px;
+}
+
+.content > div > a {
+    text-decoration: none;
+    color: #6600E4;
+    font-size: 15px;
+}
+
+.content > div > a:hover {
+    opacity: .5;
+}
+
+.content > div > p {
+    line-height: 30px;
+    font-size: 18px;
+}
