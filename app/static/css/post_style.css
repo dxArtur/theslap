@@ -15,7 +15,6 @@ body{
 
 }
 
-
 .card{
     background-color: #AFD7E9;
     border: 8px solid #E90078;
@@ -76,7 +75,6 @@ body{
     background-size: cover;
 }
 
-
 #li_feeling{
     font-size: 19px;
     font-weight: bold;
@@ -123,12 +121,12 @@ ul{
 }
 
 ul li{
-    display: in-line-block;
+    display: inline-block;
 
 }
 
 
-button:hover {
+a:hover {
     color: #6600E4;
     background-color: #AFD7E9;
 }
@@ -162,7 +160,7 @@ ul li:hover{
     background: #7ED1EF;
 }
 
-button:hover ul{
+a:hover ul{
     display: block;
 }
 
@@ -170,6 +168,10 @@ button:hover ul{
 /*mudando a cor do botão de login quando o mouse passar por cima */
 
 #bttnpost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     color: #7ED1EF;
     background-color: #6600E4;
     margin-left: 440px;
