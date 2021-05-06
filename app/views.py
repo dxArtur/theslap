@@ -62,3 +62,7 @@ def post_view(request, post_id):
 
 def about_view(request):
     return render(request, template_name="about.html")
+
+
+def contact_view(request):
+    return render(request, template_name="contact.html")

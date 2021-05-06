@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Contato {% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/contact.css' %}" >
+{% endblock css %}
+
+{% block content %}
+<div class="content">
+  <h1>Contato</h1>
+
+  <div>
+    <h4>Daniel</h4>
+    <a href="https://github.com/SabbathCode" target="_blank">@SabbathCode</a>
+    <p>
+      Daniboy, como gosta de ser chamado, é um programador indie, alternativo
+      e underground apaixonado por Queen e seu legado. Não confundir com a
+      Queen Elizabeth, essa aí ele não ama não.
+    </p>
+  </div>
+  <div>
+    <h4>Felipe</h4>
+    <a href="https://github.com/felipe-dna" target="_blank">@felipedna</a>
+    <p>
+      Felipe dos dna, conhecido mundialmente como defensor do Python, ama
+      Python, só fala em Python, e... programa em Python, veste Python e anda
+      Python e todo Python, Python, Python, Python...
+    </p>
+  </div>
+</div>
+{% endblock %}
