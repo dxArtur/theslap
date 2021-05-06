@@ -1,23 +1,15 @@
-# theslap
-echo "# theslap" >> README.md
-
-git init
-
-git add README.md
-
-git commit -m "first commit"
-
-git branch -M main
-
-git remote add origin https://github.com/SabbathCode/theslap.git
-
-git push -u origin main
+# TheSlap
 
 
-...
+### Instalação
 
-git remote add origin https://github.com/SabbathCode/theslap.git
+```sh
+$ virtualenv venv
+$ source venv/bin/activate
 
-git branch -M main
+$ pip install -r requirements.txt
 
-git push -u origin main
+$ python manage.py migrate
+
+$ python manage.py runserver
+```
