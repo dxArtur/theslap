@@ -25,11 +25,6 @@ label{
     margin-left: 10px;
 }
 
-a {
-    text-decoration: none;
-    display: block;
-}
-
 .post_feed_01{
     background-color: #7ED1EF;
     width: 700px;
@@ -68,7 +63,6 @@ button{
 }
 
 .post_feed_01>.profilepic{
-    background-image: url("../media/profiledaniel.jpeg");
     margin-left: 550px;
     width: 70px;
     height: 70px;
@@ -93,7 +87,7 @@ img{
 .card{
     background-color: #AFD7E9;
     border: 8px solid #E90078;
-    height: 420px; /*altura */
+    height: 200px; /*altura */
     width: 700px; /*Largura */
     margin: 0 auto;
     border-radius: 20px;
@@ -103,7 +97,6 @@ img{
     margin-top:-185px; /* Metade da valor da Altura */
     position:absolute;
     text-align: left;
-
 }
 
 .card_itens >label{

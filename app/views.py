@@ -6,7 +6,7 @@ from .forms import LoginForm
 
 
 # Create your views here.
-def login(request):
+def login_view(request):
     form = LoginForm()
 
     if request.method == "POST":
@@ -24,17 +24,37 @@ def login(request):
     return render(request, 'login.html', context={"form": form})
 
 
-def register(request):
+def register_view(request):
     return render(request, 'register.html')
 
 
-def home(request):
+def home_view(request):
     return render(request, 'home.html')
 
 
-def hometest(request):
+def hometest_view(request):
     return render(request, 'hometest.html')
 
 
-def post(request):
+def new_post_view(request):
     return render(request, 'post.html')
+
+
+def post_view(request, post_id):
+    posts = {
+        1: {
+            "user": "Arthur",
+            "content": "to deixando de assistir one piece p fazer seu "
+                       "trabalho me da 10 pfvr ;-;",
+            "img": "profiledaniel.jpeg"
+        },
+        2: {
+            "user": "BolsonaroEGirl",
+            "content": "gente só eu que acho lula muito bonito? s2",
+            "img": "bolsonaroegrilo.jpg"
+        }
+    }
+
+    post = posts[post_id]
+
+    return render(request, template_name="see_post.html", context={"post": post})
