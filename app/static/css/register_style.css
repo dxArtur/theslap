@@ -5,7 +5,6 @@ body{
     background-size: cover;
 }
 
-
 .logo{
     background-image: url("../media/logotheslap.png");
     width: 445px;
@@ -14,7 +13,6 @@ body{
     background-size: cover;
 
 }
-
 
 /*definindo o card*/
 .card{
@@ -31,18 +29,17 @@ body{
     position:absolute;
 }
 
-.card_itens >label{
+.card_itens > label{
     font-size: 23px;
     font-weight: bold;
     color: #1702A0;
-    font-family:Arial;
+    font-family: Arial;
 }
 
-.card_itens >input{
+.card_itens > input{
     border: 0px;
     background: #AFD7E9;
     border-radius: 8px;
-    aling-items: center;
 }
 
 nav ul ul {

@@ -14,50 +14,52 @@ body{
     background-size: cover;
 }
 
-.card{
+.card {
     background-color: #7ED1EF;
     border: 8px solid #E90078;
     height: 220px; /*altura */
     width: 700px; /*Largura */
-    margin: 0 auto;
     border-radius: 20px;
     left:50%;
     top:50%;
+
     margin-left:-350px; /* Metade do valor da Largura */
     margin-top:-185px; /* Metade da valor da Altura */
-    position:absolute;
-    text-align: center;
+    position: absolute;
 
+    display: flex;
+    flex-direction: column;
+}
+.card > .input-group {
+    display: flex;
+    flex-direction: row;
 }
 
-.card_itens >label{
-    font-size: 23px;
+label{
+    font-size: 20px;
     font-weight: bold;
     color: #1702A0;
-    font-family:Arial;
-
+    font-family: Arial;
 }
 
-.card_itens >input{
+input{
     border: 0px;
     background: #AFD7E9;
     border-radius: 8px;
     aling-items: center;
-
-
+    padding: 5px;
 }
 
-#inputuser{
+#user{
     width: 86%;
     height: 33px;
     margin-top:35px;
 }
-#inputpwd{
+#password{
     width: 86%;
     height: 33px;
     margin-top: 45px;
 }
-
 
 .card_profile{
     background-image: url("../media/blankuser.png");
@@ -83,32 +85,45 @@ body{
     border-radius: 0px 0px 20px 20px;
 }
 
-
-#bttnregister {
-    text-align: right;
-    border: 8px   solid  #E90078;
-    height: 75px; /*altura */
-    width: 716px; /*Largura */
-    border-radius: 0px 0px 20px 20px;
-    left:10%;
-    top:50%;
-    margin-left: -8px; /* Metade do valor da Largura */
-    margin-top: 30px; /* Metade da valor da Altura */
-    background-color: #AFD7E9;
-    background-size: cover;
-    font-size: 19px;
-    font-weight: bold;
-    font-family:Arial;
+a {
+    display: inline-block;
+    text-decoration: none;
 }
 
+#btn_register {
+    display: block;
+    box-sizing: border-box;
+    padding: 15px 10px 10px 10px;
+    text-align: right;
 
-#bttnlogin{
+    border: 8px solid #E90078;
+    height: 75px; /*altura */
+    min-width: 715px;
+    overflow: hidden;
+    border-radius: 0px 0px 20px 20px;
+    left: 10%;
+    top: 50%;
+    margin-left: -8px; /* Metade do valor da Largura */
+    margin-top: 30px; /* Metade da valor da Altura */
+
+    background-color: #AFD7E9;
+    background-size: cover;
+
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+#btn_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 83px;
     width: 358px;
     color: #FFFF30;
     font-size: 23px;
     font-weight: bold;
-    font-family:Arial;
+    font-family: Arial;
     border-radius: 20px 20px 20px 20px;
     border: 8px   solid  #E90078;
     margin-left: 348px; /* Metade do valor da Largura */
@@ -118,12 +133,13 @@ body{
 
 }
 /*mudando a cor do botão de login quando o mouse passar por cima */
-#bttnlogin:hover {
+#btn_login:hover {
    color: #6600E4;
    background-color: #AFD7E9;
+    cursor: pointer;
 }
 
-#bttnregister:hover {
+#btn_register:hover {
    color: #6600E4;
    background-color: #151020;
 }

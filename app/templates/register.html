@@ -11,15 +11,15 @@
     <link rel="stylesheet" href="{% static 'css/register_style.css' %}" >
 </head>
 <body>
-    <form class="form" action="">
+    <form class="form" method="POST">{% csrf_token %}
         <div class="logo"></div>
         <div class="card">
             <div class="card_itens">
-                <label id="labeluser">digite seu user:</label>
-                <input id="inputuser" name="User" placeholder="digite seu user">
-                <label id="labelpwd">digite seu password:</label>
-                <input id="inputpwd" type="text" name="Psswd" placeholder="digite sua senha">
-                <button id="bttnlogin" class="register_button" type="button">register</button>
+                <label id="labeluser">Username: </label>
+                <input id="inputuser" name="User" placeholder="Username" required />
+                <label id="labelpwd">Password:</label>
+                <input id="inputpwd" type="text" name="Psswd" placeholder="Password" required />
+                <button id="bttnlogin" class="register_button" type="submit">register</button>
             </div>
                 <div class="card_profile"/>
             </div>
